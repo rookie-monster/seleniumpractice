@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="LoginTS(failed)">
+  <test thread-count="5" name="LoginTS(failed)">
     <classes>
       <class name="testcase.SampleTestFrameworkApproach">
         <methods>
           <include name="setUp"/>
-          <include name="LoginTest" invocation-numbers="1 2 3 4 5"/>
           <include name="tearDown"/>
+          <include name="LoginTest" invocation-numbers="1 2 3 4 5"/>
         </methods>
       </class> <!-- testcase.SampleTestFrameworkApproach -->
     </classes>
