@@ -3,7 +3,7 @@
 <suite name="LoginTS">
   <test thread-count="5" name="LoginTest">
     <classes>
-      <class name="testcase.SampleTestFrameworkApproach"/>
+      <class name="testcase.LoginTest"/>
     </classes>
   </test> <!-- LoginTest -->
 </suite> <!-- Suite -->
