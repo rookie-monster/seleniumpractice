@@ -11,13 +11,13 @@ public class LoginTest extends BaseTest {
 	
 
     @Test(dataProviderClass = ReadExcelData.class, dataProvider = "data")
-    public static void Login(String username, String password, String pageHeader) {
+    public static void Login(String username, String password, String pageheader) {
     	Common common = new Common();
-    	LoginPage loginPage = new LoginPage();
-    	loginPage.enterUsername(username);
-    	loginPage.enterPassword(password);
-    	loginPage.clickLoginButton();
-    	common.verifyPageHeader("Swag Labs", pageHeader);
+    	LoginPage loginpage = new LoginPage();
+    	loginpage.enterUsername(username);
+    	loginpage.enterPassword(password);
+    	loginpage.clickLoginButton();
+    	common.verifyPageHeader("Swag Labs", pageheader);
 
     }
 }
